@@ -1,0 +1,13 @@
+{
+    "name": "digitalocean",
+    "sites": ["https://digitalocean.com"],
+    "description": "digitalocean cheats",
+    "scripts": [
+      {
+        "name": "createDomain",
+        "file": "createDomain.js",
+        "type": "command",
+        "description": "create a new domain"
+      }
+    ]
+}
