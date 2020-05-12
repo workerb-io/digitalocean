@@ -1,10 +1,10 @@
 var eventConfig = {
     eventType: "keyup",
     eventProps: {
-        key: "Enter",
-        code: "Enter",
-        keyCode: 13,
-        which: 13,
+        key: "a",
+        code: "keyA",
+        keyCode: 65,
+        which: 65,
         bubbles: true,
     }
 }
@@ -21,10 +21,6 @@ type(args[0] + ".com", "Enter domain", {
     retryDuration: 500
 })
 
-event("Enter domain", {
-    method: "by_placeholder"
-}, eventConfig)
-
 click("Add Domain", retryConfig)
 
 type("@", "Enter @ or hostname", {
@@ -32,10 +28,6 @@ type("@", "Enter @ or hostname", {
     numberOfTries: 20,
     retryDuration: 500
 })
-
-event("Enter @ or hostname", {
-    method: "by_placeholder"
-}, eventConfig)
 
 click('[title="' + args[1] + '"]', {
     method: "by_query_selector"
@@ -47,8 +39,8 @@ type("1800", "Enter TTL", {
 
 click("Create Record")
 
-var locationURL = readURL()
-open(locationURL)
+// var locationURL = readURL()
+// open(locationURL)
 
 click("CNAME", retryConfig)
 
@@ -56,17 +48,9 @@ type("www", "Enter hostname", {
     method: "by_placeholder"
 })
 
-event("Enter hostname", {
-    method: "by_placeholder"
-}, eventConfig)
-
 type("@", "Enter @ or hostname", {
     method: "by_placeholder"
 })
-
-event("Enter @ or hostname", {
-    method: "by_placeholder"
-}, eventConfig)
 
 type("1800", "Enter TTL", {
     method: "by_placeholder"
