@@ -1,7 +1,9 @@
 {
-    "name": "digitalocean",
-    "sites": ["https://digitalocean.com"],
-    "description": "digitalocean cheats",
+    "name": "DigitalOcean",
+    "sites": [
+      "https://digitalocean.com"
+    ],
+    "description": "workerB actions for digitalocean.com",
     "scripts": [
       {
         "name": "createDomain",
