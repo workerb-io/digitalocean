@@ -3,6 +3,9 @@
     "sites": [
       "https://digitalocean.com"
     ],
+    "tags": [
+      "digitalocean"
+    ],
     "description": "workerB actions for digitalocean.com",
     "scripts": [
       {
